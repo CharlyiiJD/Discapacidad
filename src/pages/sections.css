@@ -1,0 +1,30 @@
+.section-page-title { font-size: 32px; font-weight: 700; line-height: 1.25; margin: 8px 0 16px; }
+.section-page { padding-bottom: 32px; }
+.section-page-intro { max-width: 760px; color: #52606d; font-size: 16px; line-height: 1.8; margin: 0 0 40px; }
+.section-page-subtitle { font-size: 23px; font-weight: 700; line-height: 1.4; margin: 0 0 20px; }
+.service-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; list-style: none; margin: 0; padding: 0; }
+.service-item { display: flex; align-items: flex-start; gap: 18px; padding: 24px 0; border-bottom: 1px solid #dce3e9; }
+.service-item > svg { color: #125db0; flex-shrink: 0; margin-top: 2px; }
+.service-item:nth-child(3n + 2) > svg { color: #087366; }
+.service-item:nth-child(3n) > svg { color: #a3423b; }
+.service-item h3 { font-size: 19px; line-height: 1.4; font-weight: 700; margin: 0 0 10px; }
+.service-item p, .section-contact p, .accessibility-faq p { margin: 0 0 12px; font-size: 15px; line-height: 1.8; color: #52606d; }
+.section-action { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; line-height: 1.5; font-weight: 700; color: #125db0; text-decoration: none; }
+.section-action svg { flex-shrink: 0; }
+.section-action:hover { text-decoration: underline; }
+.section-contact { margin-top: 40px; padding: 28px 0 0; border-top: 2px solid #c9dfdc; }
+.section-contact h2 { font-size: 22px; font-weight: 700; line-height: 1.4; margin: 0 0 12px; }
+.accessibility-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.accessibility-faq { margin-top: 40px; max-width: 900px; }
+.accessibility-faq details { border-bottom: 1px solid #dce3e9; }
+.accessibility-faq summary { min-height: 52px; padding: 16px 4px; font-size: 16px; line-height: 1.5; font-weight: 600; cursor: pointer; }
+.accessibility-faq p { padding: 0 4px 12px; }
+.accessibility-faq summary:focus-visible { outline: 3px solid #125db0; outline-offset: 2px; }
+@media (max-width: 900px) { .accessibility-list { grid-template-columns: 1fr; gap: 0; } }
+@media (max-width: 600px) {
+  .section-page-title { font-size: 28px; }
+  .section-page-intro { margin-bottom: 28px; }
+  .section-page-subtitle { font-size: 21px; }
+  .service-list { grid-template-columns: 1fr; }
+  .service-item { gap: 14px; padding-block: 20px; }
+}

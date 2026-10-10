@@ -1,0 +1,29 @@
+.enrollment-form { display: grid; gap: 24px; }
+.enrollment-period { margin: 0; }
+.enrollment-controls, .enrollment-courses { padding: 0; margin: 0; border: 0; min-width: 0; }
+.enrollment-filters { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 24px; max-width: 800px; }
+.enrollment-filters > div { min-width: 0; }
+.enrollment-filters label { display: block; margin-bottom: 8px; font-size: 14px; font-weight: 700; }
+.enrollment-filters select { width: 100%; min-height: 46px; padding: 10px 12px; border: 1px solid #a7b4c2; border-radius: 4px; background: #fff; color: #26313d; font-size: 16px; }
+.enrollment-filters select:disabled { background: #f0f3f7; color: #52606d; }
+.enrollment-courses { margin-top: 28px; }
+.enrollment-courses legend { margin-bottom: 12px; font-size: 19px; font-weight: 700; }
+.enrollment-select-all { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; margin-bottom: 12px; font-size: 14px; cursor: pointer; }
+.enrollment-form input[type='checkbox'] { width: 20px; height: 20px; accent-color: #125db0; cursor: pointer; }
+.enrollment-table input[type='checkbox'] { margin: 12px; }
+.enrollment-form input:disabled { cursor: default; }
+.enrollment-table td:nth-child(3) { min-width: 180px; }
+.enrollment-table td:last-child { min-width: 130px; }
+.enrollment-registered { display: inline-flex; align-items: center; gap: 6px; color: #087366; font-weight: 600; }
+.enrollment-confirmation { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; padding-top: 20px; border-top: 1px solid #dce3e9; }
+.enrollment-total { margin: 0; }
+.enrollment-submit { min-height: 46px; padding: 12px 20px; border: 0; border-radius: 4px; color: #fff; background: #1266c5; font-weight: 700; cursor: pointer; }
+.enrollment-submit:hover:not(:disabled) { background: #0d4f9c; }
+.enrollment-submit:disabled { background: #64748b; cursor: default; }
+.enrollment-message, .enrollment-error { margin: 0; line-height: 1.7; }
+.portal-content .enrollment-error { color: #a02c30; }
+.credit-summary { font-size: 20px; font-weight: 700; }
+.enrollment-locked-message:focus { outline: 3px solid #125db0; outline-offset: 4px; }
+.enrollment-locked-links { display: flex; flex-wrap: wrap; gap: 16px; }
+.enrollment-locked-links a { display: inline-flex; align-items: center; min-height: 44px; color: #125db0; font-weight: 700; text-decoration: underline; }
+@media (max-width: 600px) { .enrollment-filters { grid-template-columns: 1fr; gap: 20px; } .enrollment-submit { width: 100%; } }

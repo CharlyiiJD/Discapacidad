@@ -1,0 +1,18 @@
+.admin-grades { display: grid; gap: 24px; }
+.grade-selector, .grade-editable, .grade-consolidated { padding: 0; margin: 0; min-width: 0; border: 0; }
+.grade-selection-grid, .grade-consolidated-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.grade-selection-grid > div { min-width: 0; }
+.admin-grades label { display: block; margin-bottom: 8px; font-size: 14px; font-weight: 700; }
+.admin-grades input, .admin-grades select { width: 100%; min-height: 46px; border: 1px solid #a7b4c2; border-radius: 4px; padding: 10px 12px; background: #fff; color: #26313d; font-size: 16px; }
+.admin-grades input:disabled, .admin-grades select:disabled { background: #f0f3f7; color: #52606d; }
+.grade-course-selector { margin-top: 20px; }
+.admin-grades h3 { font-size: 19px; font-weight: 700; line-height: 1.5; margin: 0 0 8px; }
+.grade-consolidated legend { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
+.grade-criteria { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.grade-save { display: inline-flex; justify-content: center; align-items: center; gap: 8px; min-height: 46px; padding: 12px 20px; border: 0; border-radius: 4px; color: #fff; background: #1266c5; font-weight: 700; cursor: pointer; }
+.grade-save:hover:not(:disabled) { background: #0d4f9c; }
+.grade-save:disabled { background: #64748b; cursor: default; }
+.portal-content .grade-error { color: #a02c30; }
+.grade-status, .grade-error, .grade-dirty { margin: 12px 0 0; }
+@media (max-width: 1100px) { .grade-consolidated-grid { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .grade-selection-grid { grid-template-columns: 1fr; } .grade-save { width: 100%; } }

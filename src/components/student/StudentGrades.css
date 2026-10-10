@@ -1,0 +1,5 @@
+.student-grades-list { display: grid; gap: 28px; }
+.student-course-grades { min-width: 0; padding-bottom: 20px; border-bottom: 1px solid #dce3e9; }
+.student-course-grades h3 { margin: 0 0 8px; font-size: 19px; font-weight: 700; line-height: 1.5; }
+.student-course-grades p { margin: 8px 0 16px; }
+.student-course-grades .student-final-grade { margin: 16px 0 0; color: #26313d; }
