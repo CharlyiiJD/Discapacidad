@@ -8,6 +8,7 @@ import { useAuth } from './context/auth-context'
 import AuthDialog, { type AuthMode } from './components/auth/AuthDialog'
 import { navigationItems } from './components/navigation/navigation'
 import './App.css'
+import SpeechReaderPanel from './components/accessibility/SpeechReaderPanel'
 
 const pages = {
   inicio: Inicio,
@@ -82,6 +83,7 @@ export default function App() {
         <Page />
       </AcademicLayout>
       {authMode && <AuthDialog key={authMode} mode={authMode} onDismiss={closeAuth} />}
+      <SpeechReaderPanel />
     </>
   )
 }

@@ -97,7 +97,7 @@ export default function IniciarSesion() {
         ¿No tienes una cuenta?{' '}
         <a
           href="#registro"
-          aria-label="Regístrate, abrir la página y el formulario de creación de cuenta"
+          aria-label="Regístrate si todavía no tienes una cuenta. Abrir el formulario para crear tu cuenta."
         >
           Regístrate
         </a>

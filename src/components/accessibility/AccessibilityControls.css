@@ -1,0 +1,22 @@
+.speech-edge-tab { position: fixed; top: 50%; left: 0; z-index: 25; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid #125db0; border-radius: 0 4px 4px 0; background: #125db0; color: #fff; cursor: pointer; }
+.speech-edge-tab:hover { background: #0d4f9c; }
+.speech-reader-panel { position: fixed; inset: 16px auto 16px 8px; width: min(360px, calc(100vw - 16px)); height: fit-content; max-height: calc(100dvh - 32px); margin: auto 0; padding: 20px; border: 1px solid #a7b4c2; border-radius: 6px; background: #fff; color: #26313d; overflow: auto; box-shadow: 0 8px 32px rgb(0 0 0 / 16%); }
+.speech-reader-panel::backdrop { background: rgb(0 0 0 / 25%); }
+.speech-panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px; }
+.speech-panel-heading h2 { font-size: 20px; line-height: 1.5; font-weight: 700; margin: 0; }
+.speech-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-size: 14px; }
+.access-command, .access-icon { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; border: 1px solid #7c8998; border-radius: 4px; background: #fff; color: #125db0; cursor: pointer; font-weight: 700; }
+.access-command { width: 100%; padding: 8px 12px; text-align: center; line-height: 1.5; }
+.access-command svg { flex-shrink: 0; }
+.access-icon { width: 44px; height: 44px; padding: 0; flex-shrink: 0; }
+.access-command:hover:not(:disabled), .access-icon:hover:not(:disabled) { background: #edf3fb; }
+.speech-toggle[aria-pressed='true'] { background: #125db0; color: #fff; border-color: #125db0; }
+.speech-toggle[aria-pressed='true']:hover { background: #0d4f9c; }
+.access-command:disabled, .access-icon:disabled { color: #52606d; background: #f0f3f7; cursor: default; }
+.speech-playback { display: flex; gap: 8px; }
+.speech-rate { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; min-height: 44px; }
+.speech-rate label { font-weight: 700; }
+.speech-rate input { width: 110px; min-height: 44px; accent-color: #125db0; }
+.speech-rate output { width: 38px; }
+.speech-status { flex-basis: 100%; margin: 0; font-size: 13px; line-height: 1.6; }
+.speech-status:empty { height: 0; }

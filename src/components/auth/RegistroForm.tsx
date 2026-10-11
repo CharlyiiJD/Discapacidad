@@ -239,7 +239,7 @@ export default function RegistroForm() {
         ¿Ya tienes una cuenta?{' '}
         <a
           href="#iniciar-sesion"
-          aria-label="Iniciar sesión, abrir el formulario de acceso"
+          aria-label="Iniciar sesión si ya tienes una cuenta. Abrir el formulario para acceder a tu cuenta."
         >
           Iniciar sesión
         </a>
