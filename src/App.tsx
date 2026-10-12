@@ -4,6 +4,7 @@ import Inicio from './pages/inicio/Inicio'
 import Servicios from './pages/servicios/Servicios'
 import Accesibilidad from './pages/accesibilidad/Accesibilidad'
 import PortalEstudiante from './pages/portal/PortalEstudiante'
+import Biblioteca from './pages/biblioteca/Biblioteca'
 import { useAuth } from './context/auth-context'
 import AuthDialog, { type AuthMode } from './components/auth/AuthDialog'
 import { navigationItems } from './components/navigation/navigation'
@@ -15,6 +16,7 @@ const pages = {
   servicios: Servicios,
   accesibilidad: Accesibilidad,
   portal: PortalEstudiante,
+  biblioteca: Biblioteca,
 }
 
 type PageId = keyof typeof pages
@@ -75,7 +77,7 @@ export default function App() {
   }, [user, authMode])
 
   const Page = pages[currentPage]
-  const pageLabel = currentPage === 'portal' ? 'Portal del estudiante' : navigationItems.find((item) => item.id === currentPage)!.label
+  const pageLabel = currentPage === 'portal' ? 'Portal del estudiante' : currentPage === 'biblioteca' ? 'Biblioteca y recursos' : navigationItems.find((item) => item.id === currentPage)!.label
 
   return (
     <>

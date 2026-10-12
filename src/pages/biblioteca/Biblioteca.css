@@ -1,0 +1,50 @@
+.library-page { padding-bottom: 40px; }
+.academic-main:has(.library-page) { width: min(1400px, calc(100% - 80px)); margin-left: max(56px, calc((100% - 1400px) / 2)); margin-right: 24px; }
+.library-back { margin-bottom: 12px; }
+.library-page .section-page-intro { margin-bottom: 24px; }
+.library-image { display: block; width: 100%; height: 180px; object-fit: cover; object-position: center 45%; border-radius: 4px; }
+.library-catalog { padding-top: 32px; }
+.library-section-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 24px; }
+.library-section-heading h2 { margin: 0; font-size: 24px; font-weight: 700; line-height: 1.4; }
+.library-section-heading > span { color: #52606d; font-size: 14px; }
+.library-filters { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr); gap: 20px; padding-block: 20px; border-block: 1px solid #dce3e9; }
+.library-filters > div { min-width: 0; }
+.library-filters label { display: block; margin-bottom: 8px; font-size: 14px; font-weight: 700; }
+.library-filters input, .library-filters select { width: 100%; min-width: 0; min-height: 46px; padding: 10px 12px; border: 1px solid #7c8998; border-radius: 4px; background: #fff; color: #26313d; font-size: 16px; }
+.library-search-field > div { position: relative; }
+.library-search-field svg { position: absolute; top: 14px; left: 12px; color: #52606d; pointer-events: none; }
+.library-search-field input { padding-left: 40px; }
+.library-results { color: #52606d; font-size: 14px; margin: 20px 0; }
+.library-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 0; padding: 0; list-style: none; }
+.library-grid > li { min-width: 0; }
+.library-book { height: 100%; display: flex; flex-direction: column; padding: 24px; border: 1px solid #dce3e9; border-top: 3px solid #087366; border-radius: 4px; background: #fff; }
+.library-book--fisica-1, .library-book--fisica-2 { border-top-color: #125db0; }
+.library-book--economia { border-top-color: #a3423b; }
+.library-book-meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; color: #52606d; font-size: 13px; }
+.library-subject { display: inline-flex; gap: 8px; align-items: center; color: #26313d; font-weight: 700; }
+.library-subject svg { color: #087366; }
+.library-book h3 { margin: 0 0 10px; font-size: 21px; line-height: 1.4; font-weight: 700; }
+.library-authors { margin: 0 0 16px; font-size: 13px; color: #52606d; line-height: 1.6; }
+.library-description { margin: 0 0 20px; line-height: 1.7; font-size: 15px; }
+.library-format { display: flex; gap: 8px; align-items: center; margin: auto 0 20px; color: #52606d; font-size: 13px; line-height: 1.6; }
+.library-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.library-primary, .library-download { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; border-radius: 4px; padding: 10px 14px; font-size: 14px; font-weight: 700; line-height: 1.5; text-decoration: none; }
+.library-primary { border: 1px solid #125db0; color: #fff; background: #125db0; cursor: pointer; }
+.library-primary:hover { background: #0d4f9c; }
+.library-download { color: #125db0; border: 1px solid #7c8998; background: #fff; }
+.library-download:hover { background: #edf3fb; }
+.library-source { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; align-self: flex-start; margin-top: 8px; color: #52606d; font-size: 13px; text-decoration: underline; }
+.library-actions svg, .library-format svg { flex-shrink: 0; }
+.library-empty { padding-block: 28px; }
+.library-empty h3 { font-size: 19px; font-weight: 700; margin-bottom: 12px; }
+.library-reader { padding-top: 32px; margin-top: 40px; border-top: 2px solid #125db0; scroll-margin-top: 20px; }
+.library-reader:focus { outline: 3px solid #125db0; outline-offset: 6px; }
+.library-reader-label { font-size: 12px; color: #087366; margin: 0 0 8px; font-weight: 700; }
+.library-close { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex-shrink: 0; border: 1px solid #7c8998; border-radius: 4px; color: #26313d; background: #fff; cursor: pointer; }
+.library-reader-links { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+.library-reader-links a { display: inline-flex; gap: 8px; align-items: center; min-height: 44px; color: #125db0; text-decoration: underline; font-weight: 700; font-size: 14px; }
+.library-reader-note { color: #52606d; font-size: 14px; line-height: 1.7; margin: 12px 0 20px; }
+.library-pdf { display: block; width: 100%; height: 650px; border: 1px solid #7c8998; border-radius: 4px; background: #f0f3f7; }
+@media (max-width: 700px) { .library-grid { grid-template-columns: 1fr; } .library-filters { grid-template-columns: 1fr; gap: 16px; } .library-search-field { grid-column: 1 / -1; } .library-section-heading { align-items: flex-start; flex-wrap: wrap; } .library-image { height: 140px; } .library-book { padding: 20px; } .library-pdf { height: 480px; } }
+@media (max-width: 380px) { .library-filters { grid-template-columns: 1fr; } .library-actions > * { width: 100%; } }
+@media (max-width: 600px) { .academic-main:has(.library-page) { width: calc(100% - 72px); margin-left: 56px; margin-right: 16px; } }

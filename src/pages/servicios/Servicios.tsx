@@ -3,7 +3,7 @@ import '../sections.css'
 
 const services = [
   { Icon: Compass, title: 'Orientación académica', description: 'Consulta sobre carreras, requisitos de admisión y los próximos pasos de tu formación.' },
-  { Icon: BookOpen, title: 'Biblioteca y recursos', description: 'Solicita información sobre materiales de estudio, consultas bibliográficas y recursos digitales.' },
+  { Icon: BookOpen, title: 'Biblioteca y recursos', description: 'Consulta libros universitarios de acceso abierto, lee en línea y encuentra materiales en PDF para descargar.' },
   { Icon: GraduationCap, title: 'Becas y oportunidades', description: 'Conoce las opciones de apoyo y consulta los requisitos para postular a una beca.' },
   { Icon: HeartHandshake, title: 'Apoyo a estudiantes', description: 'Cuéntanos qué necesitas para participar en tus actividades académicas y recibir orientación.' },
   { Icon: Laptop, title: 'Soporte tecnológico', description: 'Consulta sobre el acceso al portal, las plataformas de estudio y los recursos tecnológicos.' },
@@ -23,8 +23,8 @@ export default function Servicios() {
               <div>
                 <h3>{title}</h3>
                 <p>{description}</p>
-                <a className="section-action" href="#contacto" aria-label={`Solicitar información sobre ${title}, ir al formulario de contacto`}>
-                  Solicitar información<ArrowRight size={18} aria-hidden="true" />
+                <a className="section-action" href={title === 'Biblioteca y recursos' ? '#biblioteca' : '#contacto'} aria-label={title === 'Biblioteca y recursos' ? 'Explorar biblioteca, consultar libros y materiales PDF para leer en línea o descargar' : `Solicitar información sobre ${title}, ir al formulario de contacto`}>
+                  {title === 'Biblioteca y recursos' ? 'Explorar biblioteca' : 'Solicitar información'}<ArrowRight size={18} aria-hidden="true" />
                 </a>
               </div>
             </li>
